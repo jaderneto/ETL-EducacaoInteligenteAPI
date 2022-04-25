@@ -14,4 +14,4 @@ class APIExtractor:
 
     def return_json(self):
         r = requests.get(self.url)
-        return r.json()
+        return r.json()[1]
